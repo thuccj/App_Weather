@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppWeather.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout Padding="10,0,10,0">
+            <Image Source="welcome.png"></Image>
+            <Label 
+                Text="CHÀO MỪNG BẠN ĐẾN VỚI APP THỜI TIẾT" 
+                FontSize="28" 
+                Margin="0,20,0,0" 
+                FontAttributes="Bold"></Label>
+            <Button 
+                Text="Sử dụng vị trí hiện tại"
+                TextColor="#063267"
+                FontSize="18"
+                Margin="0,20,0,0" 
+                FontAttributes="Bold"
+                BackgroundColor="#ffbb00"
+                Command="{Binding LoginCommand}"/>
+            <Button
+                Text="Nhập tên vị trí của bạn"
+                TextColor="#063267"
+                FontSize="18"
+                Margin="0,20,0,0" 
+                FontAttributes="Bold"
+                BackgroundColor="#ffbb00"
+                Clicked="btnNewLocation"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

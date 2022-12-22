@@ -22,7 +22,7 @@ namespace AppWeather.Views
         {
             if (!string.IsNullOrWhiteSpace(_cityEntry.Text))
             {
-                Services.WeatherData weatherData = await _restService.GetWeatherData(GenerateRequestUri(Constants.OpenWeatherMapEndpoint));
+                Services.WeatherData weatherData = await _restService.GetWeatherData(GenerateRequestUri(Services.Constants.OpenWeatherMapEndpoint));
                 BindingContext = weatherData;
             }
         }

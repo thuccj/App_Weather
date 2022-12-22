@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppWeather.Views.EntNewLocation">
+             xmlns:local="clr-namespace:AppWeather.Services"
+             x:Class="AppWeather.Views.EntNewLocation"
+             Title="Nhập vị trí của bạn">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="labelStyle" 
@@ -19,11 +21,11 @@
                 <Setter Property="Margin" 
                         Value="10,0,0,0" />
             </Style>
-
+            
             <local:LongToDateTimeConverter x:Key="longToDateTimeConverter" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <ContentPage.Content>
         <StackLayout>
             <Grid BackgroundColor="#545454" 
@@ -109,7 +111,7 @@
                        Style="{StaticResource labelResultStyle}" />
                 </StackLayout>
             </ScrollView>
-            
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

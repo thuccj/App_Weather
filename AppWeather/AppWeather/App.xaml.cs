@@ -14,7 +14,21 @@ namespace AppWeather
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
+
             MainPage = new AppShell();
+
+            //bool kiemtra = false;
+
+            //if (kiemtra == true)
+            //{
+            //    MainPage = new AppShell();
+            //}
+            //else
+            //{
+            //    MainPage = new Views.LoginPage();
+            //    kiemtra = !kiemtra;
+            //}
+            
         }
 
         protected override void OnStart()

@@ -18,18 +18,36 @@
                 Text="Sử dụng vị trí hiện tại"
                 TextColor="#063267"
                 FontSize="18"
+                CornerRadius="30"
                 Margin="0,20,0,0" 
                 FontAttributes="Bold"
                 BackgroundColor="#ffbb00"
-                Command="{Binding LoginCommand}"/>
+                Command="{Binding LoginCommand}">
+                
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1.1,0">
+                        <GradientStop Color="#ffbb00" Offset="0.1" />
+                        <GradientStop Color="Green" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
             <Button
-                Text="Nhập tên vị trí của bạn"
+                Text="Nhập vị trí của bạn"
                 TextColor="#063267"
                 FontSize="18"
+                CornerRadius="30"
                 Margin="0,20,0,0" 
                 FontAttributes="Bold"
                 BackgroundColor="#ffbb00"
-                Clicked="btnNewLocation"/>
+                Clicked="btnNewLocation">
+
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="1.1,0">
+                        <GradientStop Color="#ffbb00" Offset="0.1" />
+                        <GradientStop Color="Green" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

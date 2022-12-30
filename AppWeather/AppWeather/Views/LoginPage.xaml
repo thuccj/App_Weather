@@ -8,7 +8,20 @@
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
         <StackLayout Padding="10,0,10,0">
-            <Image Source="welcome.png"></Image>
+            <Button
+                ImageSource="logout_icon.png"
+                Margin="170,0"
+                HeightRequest="50"
+                CornerRadius="30"
+                TranslationX="165"
+                TranslationY="10"
+                BackgroundColor="#fff"
+                Clicked="btnLoginUserPageclicked">
+            </Button>
+            <Image 
+                Source="welcome.png"
+                Margin="0,-10,0,0" 
+                WidthRequest="350"></Image>
             <Label 
                 Text="CHÀO MỪNG BẠN ĐẾN VỚI APP THỜI TIẾT" 
                 FontSize="28" 

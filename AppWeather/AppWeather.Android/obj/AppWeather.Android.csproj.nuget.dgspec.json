@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather.Android\\AppWeather.Android.csproj": {}
+    "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather.Android\\AppWeather.Android.csproj": {}
   },
   "projects": {
-    "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather.Android\\AppWeather.Android.csproj": {
+    "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather.Android\\AppWeather.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather.Android\\AppWeather.Android.csproj",
+        "projectUniqueName": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather.Android\\AppWeather.Android.csproj",
         "projectName": "AppWeather.Android",
-        "projectPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather.Android\\AppWeather.Android.csproj",
+        "projectPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather.Android\\AppWeather.Android.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather.Android\\obj\\",
+        "outputPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather\\AppWeather.csproj": {
-                "projectPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather\\AppWeather.csproj"
+              "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj": {
+                "projectPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather\\AppWeather.csproj": {
+    "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather\\AppWeather.csproj",
+        "projectUniqueName": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj",
         "projectName": "AppWeather",
-        "projectPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather\\AppWeather.csproj",
+        "projectPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\AppWeather\\AppWeather\\AppWeather\\obj\\",
+        "outputPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -94,6 +94,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "FirebaseAuthentication.net": {
+              "target": "Package",
+              "version": "[3.7.2, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -119,6 +123,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2545, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [

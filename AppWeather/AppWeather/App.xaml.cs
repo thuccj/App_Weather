@@ -1,4 +1,5 @@
 ﻿using AppWeather.Services;
+using AppWeather.Helper;
 using AppWeather.Views;
 using System;
 using Xamarin.Forms;
@@ -8,7 +9,7 @@ namespace AppWeather
 {
     public partial class App : Application
     {
-
+        public static LocationDatabase LocationDb = new LocationDatabase();
         public App()
         {
             InitializeComponent();
@@ -16,19 +17,6 @@ namespace AppWeather
             DependencyService.Register<MockDataStore>();
 
             MainPage = new AppShell();
-
-            //bool kiemtra = false;
-
-            //if (kiemtra == true)
-            //{
-            //    MainPage = new AppShell();
-            //}
-            //else
-            //{
-            //    MainPage = new Views.LoginPage();
-            //    kiemtra = !kiemtra;
-            //}
-            
         }
 
         protected override void OnStart()

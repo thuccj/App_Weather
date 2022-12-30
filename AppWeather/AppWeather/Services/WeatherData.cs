@@ -35,7 +35,7 @@ namespace AppWeather.Services
         [JsonProperty("clouds")]
         public Clouds Clouds { get; set; }
 
-        [JsonProperty("dt")]
+        [JsonProperty("dt_txt")]
         public long Dt { get; set; }
 
         [JsonProperty("sys")]
@@ -66,6 +66,8 @@ namespace AppWeather.Services
 
     public class Main
     {
+        [JsonProperty("feels_like")]
+        public double Feels { get; set; }
         [JsonProperty("temp")]
         public double Temperature { get; set; }
 

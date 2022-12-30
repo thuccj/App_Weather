@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWeather.Views.SavedLocationPage">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="THÊM" x:Name="TIAddLocation" Clicked="TIAddLocation_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar 
+                x:Name="SearchBarHotel"
+                TextColor="#063267"
+                Placeholder="Tìm kiếm ở đây..."
+                PlaceholderColor="#063267"
+                TextChanged="SearchBar_TextLocation">
+            </SearchBar>
+
+            <CollectionView 
+                x:Name="CVLocation" 
+                SelectionMode="Single" 
+                SelectionChanged="CVLocation_SelectionChanged">
+                
+                <!--Tạo layout cho collectionView-->
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout
+                        Orientation="Vertical"
+                        HorizontalItemSpacing="5"
+                        VerticalItemSpacing="5"
+                        Span="1">
+                    </GridItemsLayout>
+                </CollectionView.ItemsLayout>
+                <!---->
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems SwipeBehaviorOnInvoked="RemainOpen">
+                                    <SwipeItem Text="XÓA" BackgroundColor="Red"
+                                               x:Name="SWDelete"
+                                               CommandParameter="{Binding .}"
+                                               Invoked="SWDelete_Invoked"></SwipeItem>
+                                    <SwipeItem Text="SỬA" BackgroundColor="LightGreen"
+                                               x:Name="SWEdit"
+                                               CommandParameter="{Binding .}"
+                                               Invoked="SWEdit_Invoked"></SwipeItem>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            
+                            <Frame 
+                                HeightRequest="50"
+                                BorderColor="LightGray"
+                                Padding="10"
+                                Margin="2"
+                                CornerRadius="10">
+                                <StackLayout>
+                                    <Label 
+                                    Text="{Binding LocationName}"
+                                    FontAttributes="Bold" 
+                                    FontSize="Large" 
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"></Label>
+                                </StackLayout>
+                            </Frame>
+                            
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

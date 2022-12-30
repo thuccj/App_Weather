@@ -1,12 +1,6 @@
 ﻿using AppWeather.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Xamarin.Forms;
-
 using System.Windows.Input;
-using Xamarin.Essentials;
 
 namespace AppWeather.ViewModels
 {
@@ -14,8 +8,10 @@ namespace AppWeather.ViewModels
     {
         public EntHomeModel()
         {
-            btnUseLocal = new Command(async () => { await Shell.Current.GoToAsync($"//{nameof(AboutPage)}"); });
+            //btnUseLocal = new Command(async () => {
+            //    await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+            //});
         }
-        public ICommand btnUseLocal { get; }
+        //public ICommand btnUseLocal { get; }
     }
 }

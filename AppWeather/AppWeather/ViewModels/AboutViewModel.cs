@@ -9,10 +9,10 @@ namespace AppWeather.ViewModels
     {
         public AboutViewModel()
         {
-            Title = "About them";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
+            //Title = "About";
+            //OpenWebCommand = new Command(async () => await Browser.OpenAsync("https://aka.ms/xamarin-quickstart"));
         }
 
-        public ICommand OpenWebCommand { get; }
+        //public ICommand OpenWebCommand { get; }
     }
 }

@@ -4,7 +4,6 @@
              xmlns:local="clr-namespace:AppWeather.Services"
              x:Class="AppWeather.Views.EntNewLocation"
              xmlns:vm="clr-namespace:AppWeather.ViewModels"
-             Title="Nhập vị trí của bạn"
              Shell.NavBarIsVisible="False">
 
     <ContentPage.BindingContext>
@@ -73,8 +72,7 @@
                    VerticalOptions="Center"
                    BackgroundColor="#fff"
                    TextColor="#063267"
-                   Placeholder="Ho Chi Minh City"
-                   />
+                   Placeholder="Ho Chi Minh City"/>
 
                 <Button Grid.Row="1" 
                     Grid.Column="2"
@@ -148,7 +146,7 @@
                 HeightRequest="40"
                 WidthRequest="80"
                 Margin="50,0"
-                Command="{Binding btnUseLocal}">
+                Clicked="btnUserLocation">
 
                 <Button.Background>
                     <LinearGradientBrush EndPoint="1.1,0">

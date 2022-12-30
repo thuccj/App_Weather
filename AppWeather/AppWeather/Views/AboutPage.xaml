@@ -4,7 +4,11 @@
              x:Class="AppWeather.Views.AboutPage"
              xmlns:vm="clr-namespace:AppWeather.ViewModels"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             Shell.TitleColor="#063267"
+             Shell.BackgroundColor="#f0f0f0"
+             Shell.NavBarHasShadow="False"
+             Shell.ForegroundColor="#063267">
 
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
@@ -16,28 +20,29 @@
           RowSpacing="1">
                 <StackLayout>
                     <Label
-                            Grid.Row="0"
-                            Text="Bình Dương"
-                            FontSize="Title"
-                            FontAttributes="Bold"
-                            Margin="16, 0, 0, 0"></Label>
+                        x:Name="TextInfoLocal"
+                        Grid.Row="0"
+                        Text="{Binding Title}" 
+                        FontSize="Title"
+                        FontAttributes="Bold"
+                        Margin="16, 0, 0, 0"></Label>
                     <Label
-                            Grid.Row="1"
-                            Text="Việt Nam"
-                            FontSize="Body"
-                            Margin="16, -8, 0, 0"></Label>
+                        Grid.Row="1"
+                        Text="{Binding Sys.Country}"
+                        FontSize="Body"
+                        Margin="16, -8, 0, 0"></Label>
                     <Label
-                            Grid.Row="2"
-                            Text="T2, 26 Tháng 12 2022, 15:00"
-                            FontSize="Body"
-                            Margin="16, 2, 0, 0"></Label>
+                        Grid.Row="2"
+                        Text="{Binding Dt}"
+                        FontSize="Body"
+                        Margin="16, 2, 0, 0"></Label>
                     <Grid Grid.Row="3"
                         ColumnDefinitions="*,*"
                         VerticalOptions="CenterAndExpand"
                         Margin="0, 16, 24, 16">
                         <Image 
                                 Grid.Column="0"
-                                Source="icon_02d.png"
+                               
                                 WidthRequest="120"
                                 HeightRequest="120"></Image>
                         <StackLayout Grid.Column="1"
@@ -49,7 +54,7 @@
                                 <Label.FormattedText>
                                     <FormattedString>
                                         <Span
-                                                Text="23C"
+                                                Text="{Binding Main.Temperature}"
                                                 FontSize="60"
                                                 FontAttributes="Bold"
                                                 CharacterSpacing="1"></Span>
@@ -64,14 +69,14 @@
                                         <Span
                                                 Text="Feels like "></Span>
                                         <Span
-                                                Text="270C"
+                                                Text="{Binding Main.Feels}"
                                                 FontAttributes="Bold"
                                                 ></Span>
                                     </FormattedString>
                                 </Label.FormattedText>
                             </Label>
                             <Label
-                                    Text="Fews Cloud"
+                                    Text="{Binding Weather[0].Description}"
                                     FontAttributes="Bold"
                                     HorizontalOptions="EndAndExpand"></Label>
                         </StackLayout>
@@ -96,11 +101,11 @@
                                             HorizontalOptions="FillAndExpand">
                                 <Label
                                                    
-                                                    Text="Rain"
+                                                    Text="Wind"
                                                     HorizontalOptions="StartAndExpand">
                                 </Label>
                                 <Label
-                                                    Text="0,21mm/h"
+                                                    Text="{Binding Wind.Speed}"
                                                     FontAttributes="Bold"
                                                     HorizontalOptions="EndAndExpand"></Label>
                             </StackLayout>

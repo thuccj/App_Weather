@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using AppWeather.Models;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System.Windows.Input;
 using Xamarin.Essentials;
 
 namespace AppWeather.Views
@@ -49,6 +44,11 @@ namespace AppWeather.Views
         //{
         //    await DisplayPromptAsync("Nhập vị trí thành phố", "What's your name?");
         //}
+        private async void btnUserLocation(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(AboutPage)}");
+        }
+
 
         //Tạo một API với vị trí được nhập
         string GenerateRequestUri(string endpoint)

@@ -14,7 +14,7 @@ namespace AppWeather.Views
             this.BindingContext = new LoginViewModel();
         }
         //Đăng nhập vào trang EntNewLocation
-        private void btnNewLocation(object sender, EventArgs e)
+        private async void btnNewLocation(object sender, EventArgs e)
         {
             Navigation.PushAsync(new EntNewLocation());
         }
@@ -23,5 +23,6 @@ namespace AppWeather.Views
         {
             Navigation.PushAsync(new LoginUserPage());
         }
+        
     }
 }

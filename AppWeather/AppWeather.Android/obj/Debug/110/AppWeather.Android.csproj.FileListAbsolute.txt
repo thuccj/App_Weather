@@ -1307,3 +1307,6 @@ E:\Tailieunam4_1\Ungdungdanentang\project\zFileGithub_sup\App_Weather\AppWeather
 E:\Tailieunam4_1\Ungdungdanentang\project\zFileGithub_sup\App_Weather\AppWeather\AppWeather.Android\obj\Debug\110\android\assets\System.Buffers.dll
 E:\Tailieunam4_1\Ungdungdanentang\project\zFileGithub_sup\App_Weather\AppWeather\AppWeather.Android\obj\Debug\110\android\assets\System.Memory.dll
 E:\Tailieunam4_1\Ungdungdanentang\project\zFileGithub_sup\App_Weather\AppWeather\AppWeather.Android\obj\Debug\110\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+E:\Tailieunam4_1\Ungdungdanentang\project\zFileGithub_sup\App_Weather\AppWeather\AppWeather.Android\obj\Debug\110\res\drawable\home_icon1.png
+E:\Tailieunam4_1\Ungdungdanentang\project\zFileGithub_sup\App_Weather\AppWeather\AppWeather.Android\obj\Debug\110\res\drawable\info_icon.png
+E:\Tailieunam4_1\Ungdungdanentang\project\zFileGithub_sup\App_Weather\AppWeather\AppWeather.Android\obj\Debug\110\res\drawable\save_icon.png

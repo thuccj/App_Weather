@@ -45,12 +45,12 @@ namespace AppWeather.Views
             }
             else
             {
-                Location city = new Location
+                Location local = new Location
                 {
                     LocationName = EntLocationName.Text,
                 };
 
-                if (App.LocationDb.CreateLocation(city))
+                if (App.LocationDb.CreateLocation(local))
                 {
                     await DisplayAlert("Thông báo", "Thêm mới thành công!", "OK");
                     await Navigation.PopAsync();

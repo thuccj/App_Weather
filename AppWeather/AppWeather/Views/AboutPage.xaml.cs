@@ -1,4 +1,5 @@
 ﻿using AppWeather.Models;
+using System;
 using Xamarin.Forms;
 
 namespace AppWeather.Views
@@ -6,18 +7,30 @@ namespace AppWeather.Views
     public partial class AboutPage : ContentPage
     {
         Location _Location;
+        Location _Location1;
+
+
         Services.RestService _restService;
         public AboutPage()
         {
             InitializeComponent();
             _restService = new Services.RestService();
+
+            _Location1 = new Location { LocationName="Thu Duc", LocationId=1};
+            _Location = _Location1;
+            GetWeather(_Location1);
+            
         }
         public AboutPage(Location location)
         {
             InitializeComponent();
             _restService = new Services.RestService();
+
             _Location = location;
             GetWeather(_Location);
+            labelDate.Text = DateTime.Now.ToString();
+            //Feelslike.Text = "Feelslike like ";
+            UnitsMetricSpan.Text = "℃";
         }
 
         // Nhận giá trị từ trang khác gửi đến
@@ -42,6 +55,7 @@ namespace AppWeather.Views
             requestUri += $"?q={_Location.LocationName}";
             requestUri += "&units=metric"; // or units=metric
             requestUri += $"&APPID={Services.Constants.OpenWeatherMapAPIKey}";
+            requestUri += "&lang=vi";
             return requestUri;
         }
 

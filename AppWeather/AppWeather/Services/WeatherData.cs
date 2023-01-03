@@ -118,6 +118,7 @@ namespace AppWeather.Services
 
         [JsonProperty("icon")]
         public string Icon { get; set; }
+        public string IconFull => $"{"icon_"}{Icon}{".png"}";
     }
 
     public class Wind

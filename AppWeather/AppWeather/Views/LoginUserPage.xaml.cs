@@ -20,6 +20,22 @@ namespace AppWeather.Views
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        //Ẩn hiện mật khẩu
+        async void IsCheckedPassword(object sender, CheckedChangedEventArgs e)
+        {
+            bool isCheck = CheckBoxPass.IsChecked;
+            if (!isCheck)
+            {
+                UserLoginPassword.IsPassword = true;
+                TextShowHidePassword.Text = "Hiện mật khẩu";
+            }
+            else
+            {
+                UserLoginPassword.IsPassword = false;
+                TextShowHidePassword.Text = "Ẩn mật khẩu";
+            }
+        }
         async void loginbuttonclicked(Object sender, EventArgs e)
         {
             var authProvider = new FirebaseAuthProvider(new FirebaseConfig(WebAPIkey));
@@ -31,7 +47,6 @@ namespace AppWeather.Views
                 Preferences.Set("MyFirebaseRefreshToken", serializedcontnet);
                 await App.Current.MainPage.DisplayAlert("Thông báo", "Đăng nhập thành công", "Ok");
                 await Navigation.PushAsync(new LoginPage());
-                //Shell.SetNavBarIsVisible(this, false);
             }
             catch (Exception ex)
             {

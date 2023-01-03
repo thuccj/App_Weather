@@ -4,7 +4,8 @@
              xmlns:local="clr-namespace:AppWeather.Services"
              x:Class="AppWeather.Views.EntNewLocation"
              xmlns:vm="clr-namespace:AppWeather.ViewModels"
-             Shell.NavBarIsVisible="False">
+             Shell.BackgroundColor="#063267"
+             Shell.NavBarHasShadow="False">
 
     <ContentPage.BindingContext>
         <vm:EntHomeModel />
@@ -33,7 +34,7 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="0,-20,0,0">
             <Grid BackgroundColor="#063267" 
               Padding="10,20,10,10">
                 <Grid.RowDefinitions>

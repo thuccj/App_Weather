@@ -1,5 +1,6 @@
 ﻿using AppWeather.Models;
 using System;
+using System.Linq;
 using System.Collections.ObjectModel;
 
 using Xamarin.Forms;
@@ -10,22 +11,9 @@ namespace AppWeather.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SavedLocationPage : ContentPage
     {
-        public ObservableCollection<Location> LocalNames;
         public SavedLocationPage()
         {
             InitializeComponent();
-
-            //===============Tạo dữ liệu ban đầu để làm thanh searchbar============
-            //LocalNames = new ObservableCollection<Location>
-            //{
-            //    new Location{LocationName="Ho Chi Minh", LocationId=1},
-            //    new Location{LocationName="Ha Noi", LocationId=2},
-            //    new Location{LocationName="Vung Tau", LocationId=3},
-            //    new Location{LocationName="Thu Duc", LocationId=4},
-            //    new Location{LocationName="Binh Duong", LocationId=5},
-            //    new Location{LocationName="Loc Ninh", LocationId=6},
-            //};
-            //CVLocation.ItemsSource = LocalNames;
         }
         protected override void OnAppearing()
         {
@@ -65,9 +53,9 @@ namespace AppWeather.Views
             var location = swipeItem.CommandParameter as Location;
             Navigation.PushAsync(new AddLocationPage(location));
         }
-        private void SearchBar_TextLocation(object sender, EventArgs e)
+        private void SearchBar_TextLocation(object sender, TextChangedEventArgs e)
         {
-
+            CVLocation.ItemsSource = App.LocationDb.ReadLocation().Where(a => a.LocationName.ToLower().StartsWith(e.NewTextValue));
         }
     }
 }

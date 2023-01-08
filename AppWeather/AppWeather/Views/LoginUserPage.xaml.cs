@@ -1,10 +1,6 @@
 ﻿using Firebase.Auth;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -53,9 +49,13 @@ namespace AppWeather.Views
                 await App.Current.MainPage.DisplayAlert("Thông báo", "Email hoặc mật khẩu không hợp lệ", "OK");
             }
         }
-        void signuppageclicled(object sender, EventArgs e)
+        private async void signuppageclicled(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SignupUserPage());
+            await Navigation.PushAsync(new SignupUserPage());
+        }
+        private async void forgotpageclicled(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ForgotUserpage());
         }
     }
 }

@@ -99,37 +99,37 @@
                 <StackLayout Padding="10">
                     <Label Text="Vị trí" 
                        Style="{StaticResource labelStyle}" />
-                    <Label x:Name="txtLocal" Text="{Binding Title}" 
+                    <Label x:Name="txtLocal" Text="{Binding City.Title}" 
                        Style="{StaticResource labelResultStyle}" />
 
                     <Label Text="Nhiệt độ ( ℃ )" 
                        Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Main.Temperature}" 
+                    <Label Text="{Binding List[0].Main.Temp}" 
                        Style="{StaticResource labelResultStyle}" />
 
                     <Label Text="Tốc độ gió" 
                        Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Wind.Speed}" 
+                    <Label Text="{Binding List[0].Wind.Speed}" 
                        Style="{StaticResource labelResultStyle}" />
 
                     <Label Text="Độ ẩm" 
                        Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Main.Humidity}" 
+                    <Label Text="{Binding List[0].Main.Humidity}" 
                        Style="{StaticResource labelResultStyle}" />
 
                     <Label Text="Thời tiết" 
                        Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Weather[0].Visibility}" 
+                    <Label Text="{Binding List[0].Weather[0].Description}" 
                        Style="{StaticResource labelResultStyle}" />
 
                     <Label Text="Thời gian mặt trời mọc" 
                        Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Sys.Sunrise, Converter={StaticResource longToDateTimeConverter}}" 
+                    <Label Text="{Binding City.Sunrise, Converter={StaticResource longToDateTimeConverter}}" 
                        Style="{StaticResource labelResultStyle}" />
 
                     <Label Text="Thời gian mặt trời lặn" 
                        Style="{StaticResource labelStyle}" />
-                    <Label Text="{Binding Sys.Sunset, Converter={StaticResource longToDateTimeConverter}}" 
+                    <Label Text="{Binding City.Sunset, Converter={StaticResource longToDateTimeConverter}}" 
                        Style="{StaticResource labelResultStyle}" />
                 </StackLayout>
             </ScrollView>

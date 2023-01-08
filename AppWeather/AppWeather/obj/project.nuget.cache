@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vi+weNY6XIqvfflGCT1kwRE0plr1Pwb851ef6TXpwHbjWqvK+lHYqsMjm4yT7PuZEplPfYXPSrbh+lmg7CxJLA==",
+  "dgSpecHash": "qgporjeXzGcGKk3jqatMvQ3R13fdVTIpQn5mKtFQClWk0DhrCNyTvZIiu0uhXvwGsnM6IW19e1zXg2poI4PJ9g==",
   "success": true,
-  "projectFilePath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj",
+  "projectFilePath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\gitcloneweather\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

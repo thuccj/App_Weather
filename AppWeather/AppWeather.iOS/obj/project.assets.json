@@ -1847,11 +1847,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather.iOS\\AppWeather.iOS.csproj",
+      "projectUniqueName": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\gitcloneweather\\App_Weather\\AppWeather\\AppWeather.iOS\\AppWeather.iOS.csproj",
       "projectName": "AppWeather.iOS",
-      "projectPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather.iOS\\AppWeather.iOS.csproj",
+      "projectPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\gitcloneweather\\App_Weather\\AppWeather\\AppWeather.iOS\\AppWeather.iOS.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather.iOS\\obj\\",
+      "outputPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\gitcloneweather\\App_Weather\\AppWeather\\AppWeather.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1872,8 +1872,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj": {
-              "projectPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj"
+            "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\gitcloneweather\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj": {
+              "projectPath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\gitcloneweather\\App_Weather\\AppWeather\\AppWeather\\AppWeather.csproj"
             }
           }
         }

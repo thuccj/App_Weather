@@ -1,10 +1,5 @@
 ﻿using Firebase.Auth;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -26,11 +21,13 @@ namespace AppWeather.Views
             if (!isCheck)
             {
                 UserNewPassword.IsPassword = true;
+                UserNewAgainPassword.IsPassword = true;
                 TextShowHidePassword.Text = "Hiện mật khẩu";
             }
             else
             {
                 UserNewPassword.IsPassword = false;
+                UserNewAgainPassword.IsPassword = false;
                 TextShowHidePassword.Text = "Ẩn mật khẩu";
             }
         }
@@ -38,16 +35,28 @@ namespace AppWeather.Views
         {
             try
             {
-                var authProvider = new FirebaseAuthProvider(new FirebaseConfig(WebAPIkey));
-                var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(UserNewEmail.Text, UserNewPassword.Text);
-                //string gettoken = auth.FirebaseToken;
-                //await App.Current.MainPage.DisplayAlert("Alert", gettoken, "Ok");
-
                 string check_email = "@gmail.com";
                 int index_check = UserNewEmail.Text.IndexOf('@');
                 string getfull_check = UserNewEmail.Text.Substring(index_check);
-                if (check_email == getfull_check)
+
+                //Check True Value
+                if (check_email != getfull_check || index_check == -1)
                 {
+                    await App.Current.MainPage.DisplayAlert("Thông báo", "Email không hợp lệ \n\n-Email: ***@gmail.com", "Ok");
+                }
+                else if (UserNewPassword.Text.Length < 6)
+                {
+                    await App.Current.MainPage.DisplayAlert("Thông báo", "Mật khẩu tối thiểu 6 ký tự", "Ok");
+                }
+                else if (UserNewPassword.Text != UserNewAgainPassword.Text)
+                {
+                    await App.Current.MainPage.DisplayAlert("Thông báo", "Mật khẩu nhập lại không khớp", "Ok");
+                }
+                else
+                {
+                    var authProvider = new FirebaseAuthProvider(new FirebaseConfig(WebAPIkey));
+                    var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(UserNewEmail.Text, UserNewPassword.Text);
+
                     await App.Current.MainPage.DisplayAlert("Thông báo", "Tạo tài khoản thành công", "Ok");
                     await Navigation.PushAsync(new LoginPage());
                 }
@@ -55,12 +64,13 @@ namespace AppWeather.Views
             catch (Exception ex)
             {
                 //await App.Current.MainPage.DisplayAlert("Alert", ex.Message, "OK");
-                await App.Current.MainPage.DisplayAlert("Thông báo", "Kiểm tra lại thông tin tài khoản. \n\n-Tài khoản có thể đã tồn tại. \n-Email: ***@gmail.com \n-Mật khẩu tối thiểu 6 ký tự", "OK");
+                await App.Current.MainPage.DisplayAlert("Thông báo", "Kiểm tra lại thông tin tài khoản \n\n-Tài khoản có thể đã tồn tại \n-Chưa nhập đủ thông tin", "OK");
             }
         }
-        void loginbuttonclicked(object sender, EventArgs e)
+
+        private async void loginbuttonclicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new LoginUserPage());
+            await Navigation.PushAsync(new LoginUserPage());
         }
     }
 }

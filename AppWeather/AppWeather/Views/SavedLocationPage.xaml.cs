@@ -1,7 +1,6 @@
 ﻿using AppWeather.Models;
 using System;
 using System.Linq;
-using System.Collections.ObjectModel;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

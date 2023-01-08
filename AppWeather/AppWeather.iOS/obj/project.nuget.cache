@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MFEAe4SYnCa8j5OJQplm1C3NjCKY84EZAlfLkWwZOespVEBMyW3d/u/3y8jaJrSC3yZTHd4wHVwkoreveDIXBQ==",
+  "dgSpecHash": "wySS3Bd+HYTiKB2HXWAzmWCr8JuvMrvKvLkhOt4l5TKh5W2/GE82QPQGGZTap+C90MCifQzxGU//eQBqd2d1bg==",
   "success": true,
-  "projectFilePath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\zFileGithub_sup\\App_Weather\\AppWeather\\AppWeather.iOS\\AppWeather.iOS.csproj",
+  "projectFilePath": "E:\\Tailieunam4_1\\Ungdungdanentang\\project\\gitcloneweather\\App_Weather\\AppWeather\\AppWeather.iOS\\AppWeather.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",

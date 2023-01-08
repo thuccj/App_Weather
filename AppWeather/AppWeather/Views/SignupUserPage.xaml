@@ -9,15 +9,22 @@
         <Image Source="splash_logo.png"></Image>
         <Entry
             x:Name="UserNewEmail"
-            Placeholder="User New Email"
+            Placeholder="Nhập Email"
             TextColor="#063267"
             BackgroundColor="LightGray"></Entry>
         <Entry
             x:Name="UserNewPassword"
-            Placeholder="User New Password"
+            Placeholder="Nhập mật khẩu"
             TextColor="#063267"
             BackgroundColor="LightGray"
             IsPassword="True"></Entry>
+        <Entry
+            x:Name="UserNewAgainPassword"
+            Placeholder="Nhập lại mật khẩu"
+            TextColor="#063267"
+            BackgroundColor="LightGray"
+            IsPassword="True"></Entry>
+
         <StackLayout>
             <CheckBox 
                 x:Name="CheckBoxPass"
@@ -29,12 +36,15 @@
                 TextColor="White"
                 Margin="40,-32,0,0"></Label>
         </StackLayout>
+
         <Button
             x:Name="signupbutton"
-            Text="Sign up"
+            Text="Đăng ký"
             TextColor="#063267"
+            BackgroundColor="#ffbb00"
             CornerRadius="30"
             Margin="0,50,0,20"
+            FontSize="Medium"
             Clicked="signupbuttonclicked">
 
             <Button.Background>
@@ -44,11 +54,19 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button
-            x:Name="loginbutton"
-            Text="Login"
-            Margin="140,0"
-            CornerRadius="30"
-            Clicked="loginbuttonclicked"></Button>
+
+        <Label 
+            Text="Đăng nhập"
+            TextColor="#fff"
+            TextDecorations="Underline"
+            HorizontalOptions="Center"
+            TextTransform="Uppercase"
+            FontSize="Medium">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer 
+                    x:Name="ForgotTap"
+                    Tapped="loginbuttonclicked"></TapGestureRecognizer>
+            </Label.GestureRecognizers>
+        </Label>
     </StackLayout>
 </ContentPage>

@@ -1,8 +1,6 @@
-﻿using AppWeather.Models;
-using System;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Xamarin.Essentials;
 
 namespace AppWeather.Views
 {
@@ -33,7 +31,7 @@ namespace AppWeather.Views
                 {
                     nameWeather.Text = "Thời tiết ổn định đó";
                 }
-                
+
             }
             else
             {

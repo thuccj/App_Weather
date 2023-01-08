@@ -21,32 +21,33 @@
         <StackLayout>
             <CheckBox 
                 x:Name="CheckBoxPass"
-                Margin="0,5,0,0"
                 CheckedChanged="IsCheckedPassword"></CheckBox>
             <Label 
                 x:Name="TextShowHidePassword"
                 Text="Hiện mật khẩu"
                 TextColor="White"
-                Margin="40,-32,0,0"></Label>
+                Margin="40,-33"></Label>
+            <Label 
+                Text="Quên mật khẩu"
+                TextColor="White"
+                HorizontalOptions="End"
+                Margin="0,8,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer 
+                    x:Name="ForgotTap"
+                    Tapped="forgotpageclicled"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
-        
 
-        <!--<Grid
-            RowDefinitions="Auto, Auto, Auto"
-            ColumnDefinitions="*,*">
-            <CheckBox 
-                x:Name="CheckBoxPass"
-                Margin="0,5,0,0"
-                BackgroundColor="LightGray"
-                CheckedChanged="IsCheckedPassword"></CheckBox>
-        </Grid>-->
-        
         <Button
             x:Name="loginbutton"
-            Text="Login"
+            Text="Đăng nhập"
+            FontSize="Medium"
             TextColor="#063267"
             CornerRadius="30"
             Margin="0,50,0,20"
+            BackgroundColor="#ffbb00"
             Clicked="loginbuttonclicked">
 
             <Button.Background>
@@ -56,11 +57,19 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button
-            x:Name="signupbutton"
-            Text="Sign up"
-            Margin="140,0"
-            CornerRadius="30"
-            Clicked="signuppageclicled"></Button>
+
+        <Label 
+            Text="Đăng ký"
+            TextColor="#fff"
+            TextDecorations="Underline"
+            HorizontalOptions="Center"
+            TextTransform="Uppercase"
+            FontSize="Medium">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer 
+                    x:Name="Signup"
+                    Tapped="signuppageclicled"></TapGestureRecognizer>
+            </Label.GestureRecognizers>
+        </Label>
     </StackLayout>
 </ContentPage>

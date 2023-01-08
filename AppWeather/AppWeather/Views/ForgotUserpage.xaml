@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppWeather.Views.ForgotUserpage"
+             Shell.BackgroundColor="#fff"
+             Shell.ForegroundColor="#063267"
+             Shell.NavBarHasShadow="False">
+    <ContentPage.Content>
+        <StackLayout 
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center">
+            <Entry
+                x:Name="EntNameEmail"
+                Placeholder="Nhập email"
+                Text=""
+                WidthRequest="400"></Entry>
+            <Button
+                x:Name="Forget"
+                Text="Gửi link đến email"
+                Clicked="Forget_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

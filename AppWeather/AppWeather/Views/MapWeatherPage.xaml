@@ -2,8 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppWeather.Views.MapWeatherPage"
+             Title="Bản đồ thời tiết"
+             Shell.TitleColor="#063267"
              Shell.NavBarHasShadow="False"
-             Shell.BackgroundColor="Transparent">
+             Shell.BackgroundColor="#4BA44B"
+             Shell.ForegroundColor="#063267">
     <ContentPage.Content>
         <StackLayout>
             <WebView 

@@ -69,22 +69,20 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
+
     <FlyoutItem Title="Home" Icon="home_icon1.png">
-        <ShellContent Route="LoginUserPage" ContentTemplate="{DataTemplate local:LoginUserPage}" />
+        <ShellContent Route="LoginUserPage" ContentTemplate="{DataTemplate local:LoginPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Thông tin thời tiết" Icon="info_icon.png">
+    <FlyoutItem Title="Thông tin thời tiết" Icon="icon_infoweather.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Vị trí được lưu" Icon="save_icon.png">
         <ShellContent Route="SavedLocationPage" ContentTemplate="{DataTemplate local:SavedLocationPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Bản đồ thời tiết" Icon="save_icon.png">
+    <FlyoutItem Title="Bản đồ thời tiết" Icon="icon_map.png">
         <ShellContent Route="MapWeatherPage" ContentTemplate="{DataTemplate local:MapWeatherPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Cài đặt chung" Icon="icon_feed.png">
-        <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:SettingPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Tài khoản" Icon="icon_feed.png">
+    <FlyoutItem Title="Tài khoản" Icon="icon_user2.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:AccountUserPage}" />
     </FlyoutItem>
     <!--<FlyoutItem Title="Browse" Icon="icon_feed.png">

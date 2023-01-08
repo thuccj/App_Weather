@@ -23,6 +23,6 @@ namespace AppWeather.Views
         {
             Navigation.PushAsync(new LoginUserPage());
         }
-        
+
     }
 }

@@ -71,7 +71,7 @@
     -->
 
     <FlyoutItem Title="Home" Icon="home_icon1.png">
-        <ShellContent Route="LoginUserPage" ContentTemplate="{DataTemplate local:LoginPage}" />
+        <ShellContent Route="LoginUserPage" ContentTemplate="{DataTemplate local:LoginUserPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Thông tin thời tiết" Icon="icon_infoweather.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />

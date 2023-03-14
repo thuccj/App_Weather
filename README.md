@@ -1,5 +1,5 @@
 # App Weather SunJ
-
+<head>
 <style>
   img{
     display: block;  
@@ -7,7 +7,7 @@
     width: 300px;
   }
 </style>
-
+</head>
 <a href="https://youtu.be/9FFDX6xa830" style="font-size: 1.5rem">Video demo here 🔥</a>
 
 <h2>Login Page</h2>

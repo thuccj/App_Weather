@@ -14,8 +14,13 @@
 
 | | |
 |:----------:|:----------:|
-|<img width="400" src="./Demo/image1.png">Login Page|<img width="400" src="./Demo/image2.png">Signup Page|
-|<img width="400" src="./Demo/image3.png">Forget Password Page|<img width="400" src="./Demo/image4.png">Home Page|
-|<img width="400" src="./Demo/image5.png">Enter Location Page|<img width="400" src="./Demo/image6.png">Information Page|
-|<img width="400" src="./Demo/image7.png">Save Location Page|<img width="400" src="./Demo/image8.png">Add Location Page|
-|<img width="400" src="./Demo/image9.png">Map Page|<img width="400" src="./Demo/image10.png">Account Page|
+|Login Page|Signup Page|
+|<img width="300" src="./Demo/image1.png">|<img width="300" src="./Demo/image2.png">|
+|Forget Password Page|Home Page|
+|<img width="300" src="./Demo/image3.png">|<img width="300" src="./Demo/image4.png">|
+|Enter Location Page|Information Page|
+|<img width="300" src="./Demo/image5.png">|<img width="300" src="./Demo/image6.png">|
+|Save Location Page|Add Location Page|
+|<img width="300" src="./Demo/image7.png">|<img width="300" src="./Demo/image8.png">|
+|Map Page|Account Page|
+|<img width="300" src="./Demo/image9.png">|<img width="300" src="./Demo/image10.png">|
